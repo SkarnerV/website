@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "source": "index.html",
+  "homepage": "http://skarnerv.github.io/website",
   "scripts": {
     "dev": "parcel --no-cache",
     "build": "parcel build",

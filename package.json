@@ -8,7 +8,7 @@
     "dev": "parcel --no-cache",
     "build": "parcel build",
     "test": "jest",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],

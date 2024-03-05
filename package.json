@@ -6,10 +6,15 @@
   "homepage": "http://skarnerv.github.io/website",
   "scripts": {
     "dev": "parcel --no-cache",
-    "build": "parcel build",
+    "build": "rm -rf dist && parcel build index.html --public-url https://skarnerv.github.io/website/",
     "test": "jest",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./build"
+    }
   },
   "keywords": [],
   "author": "Skarner Han",

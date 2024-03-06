@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const FullPageThreeDEffect = () => {
+const RotationText = () => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: MouseEvent) => {
@@ -12,11 +12,13 @@ const FullPageThreeDEffect = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
+    if (typeof window !== "undefined") {
+      window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+      return () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+      };
+    }
   }, []);
 
   return (
@@ -30,11 +32,10 @@ const FullPageThreeDEffect = () => {
     >
       <div className="flex flex-col">
         <div>Hello, I'm Shuhang Han</div>
-
         <div className="mt-6">Have a seat</div>
       </div>
     </div>
   );
 };
 
-export default FullPageThreeDEffect;
+export default RotationText;

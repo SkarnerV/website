@@ -1,6 +1,4 @@
 import React from "react";
-import Avatar from "./avatar";
-import Button from "./button";
 import Icon from "./icon";
 
 const Profile = (props: { onClose: () => void }) => {

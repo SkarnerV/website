@@ -3,7 +3,7 @@ import Button from "./button";
 import Avatar from "./avatar";
 
 const Navbar = (props: { openProfile: () => void }) => {
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const [colorChange, setColorChange] = useState(false);
 
   const changeNavbarColor = () => {
@@ -15,10 +15,12 @@ const Navbar = (props: { openProfile: () => void }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNavbarColor);
-    return () => {
-      window.removeEventListener("scroll", changeNavbarColor);
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", changeNavbarColor);
+      return () => {
+        window.removeEventListener("scroll", changeNavbarColor);
+      };
+    }
   }, []);
 
   return (

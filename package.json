@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "parcel --no-cache",
     "build": "rm -rf dist && parcel build index.html --public-url https://skarnerv.github.io/website/",
-    "test": "jest",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build"
   },

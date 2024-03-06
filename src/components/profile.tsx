@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from "./avatar";
 import Button from "./button";
+import Icon from "./icon";
 
 const Profile = (props: { onClose: () => void }) => {
   return (
@@ -8,23 +9,17 @@ const Profile = (props: { onClose: () => void }) => {
       <div className="flex flex-col items-center">
         <div className="bg-avatar bg-cover w-20 h-20  border-gray-400 border-2 rounded-full" />
         <div className="mb-6"></div>
-        <a
-          href="https://github.com/SkarnerV"
-          className="bg-cover bg-github w-6 h-6"
-        ></a>
-        <div className="mb-6"></div>
-        <a
-          href="https://www.linkedin.com/in/shuhang-h-581b141b5/"
-          className="bg-cover bg-linkedin w-6 h-6"
-        ></a>
-        <div className="mb-6"></div>
-        <a
-          href="mailto:skarner.han@gmail.com"
-          className="bg-cover bg-email w-6 h-6"
-        ></a>
+        <Icon path="https://github.com/SkarnerV/" iconName="github" />
+        <div className="mb-2"></div>
+        <Icon
+          path="https://www.linkedin.com/in/shuhang-h-581b141b5/"
+          iconName="linkedin"
+        />
+        <div className="mb-2"></div>
+        <Icon path="mailto:skarner.han@gmail.com" iconName="email" />
       </div>
       <div className="mb-6" onClick={props.onClose}>
-        <button className="bg-cover bg-cross w-6 h-6 "></button>
+        <Icon iconName="cross" />
       </div>
     </div>
   );

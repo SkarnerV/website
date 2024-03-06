@@ -11,6 +11,8 @@ module.exports = {
         focus: "url('./public/svg/focus.svg')",
         github: "url('./public/svg/github.svg')",
         linkedin: "url('./public/svg/linkedin.svg')",
+        email: "url('./public/svg/email.svg')",
+        cross: "url('./public/svg/cross.svg')",
       },
     },
   },

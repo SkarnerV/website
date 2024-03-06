@@ -29,7 +29,7 @@ const FullPageThreeDEffect = () => {
       }}
     >
       <div className="flex flex-col">
-        <div>Hello, I'm Shuhang</div>
+        <div>Hello, I'm Shuhang Han</div>
 
         <div className="mt-6">Have a seat</div>
       </div>

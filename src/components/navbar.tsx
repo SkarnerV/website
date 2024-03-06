@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Button from "./button";
 import Avatar from "./avatar";
 
-const Navbar = () => {
+const Navbar = (props: { openProfile: () => void }) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [colorChange, setColorChange] = useState(false);
 
@@ -23,11 +23,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-10 w-full px-8 py-2 transition-colors duration-300 ease-in-out bg-gray-700 ${
+      className={`w-full fixed top-0 z-10 px-8 py-2 transition-colors duration-300 ease-in-out bg-gray-700 ${
         colorChange ? "bg-gray-700" : "md:bg-transparent"
       }`}
     >
       <div className="flex justify-between items-center">
+        <div onClick={props.openProfile}>
+          <Avatar />
+        </div>
         <div className="hidden md:block">
           <Button text={"About"} />
           <Button text={"Experience"} />
@@ -41,12 +44,9 @@ const Navbar = () => {
           <div className="w-4 h-4 bg-hamburger bg-cover "></div>
           <div className="pl-2">Menu</div>
         </button>
-        <div>
-          <Avatar />
-        </div>
       </div>
       {openMenu && (
-        <div className="md:hidden flex flex-col w-full ">
+        <div className="md:hidden flex flex-col w-full items-end">
           <Button text={"About"} />
           <Button text={"Experience"} />
           <Button text={"Project"} />

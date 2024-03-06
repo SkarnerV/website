@@ -1,5 +1,6 @@
 import React from "react";
 import RotatingText from "../components/rotation";
+import Navbar from "../components/navbar";
 
 const LandingPage = () => {
   return (

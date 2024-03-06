@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         ps5bg: "url('/public/img/PS5Background.jpg')",
-        avatar: "url('/public/img/avatar.jpg')",
+        avatar: "url('/public/img/profile.jpg')",
         mainbg: "url('/public/img/wallbg.jpg')",
         hamburger: "url('/public/svg/hamburger.svg')",
         focus: "url('/public/svg/focus.svg')",

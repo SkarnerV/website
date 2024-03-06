@@ -1,4 +1,9 @@
 import React from "react";
+import LandingPage from "./pages/landing";
 export const App = () => {
-  return <div className="font-bold underline">Hello World!!</div>;
+  return (
+    <div>
+      <LandingPage />
+    </div>
+  );
 };

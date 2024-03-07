@@ -5,10 +5,9 @@
   "source": "index.html",
   "homepage": "http://skarnerv.github.io/website",
   "scripts": {
-    "dev": "parcel --no-cache",
+    "dev": "rm -rf .parce-cache && parcel --no-cache",
     "build": "rm -rf dist && parcel build index.html --public-url https://skarnerv.github.io/website/",
     "test": "jest",
-    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build"
   },
   "targets": {

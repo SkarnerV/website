@@ -13,6 +13,7 @@ module.exports = {
         linkedin: "url('/public/svg/linkedin.svg')",
         email: "url('/public/svg/email.svg')",
         cross: "url('/public/svg/cross.svg')",
+        terminal: "url('/public/svg/terminal.svg')",
       },
     },
   },

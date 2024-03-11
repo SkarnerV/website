@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import LandingPage from "./pages/landing";
 import Navbar from "./components/navbar";
-import ExperiencePage from "./pages/experience";
+import AboutPage from "./pages/about";
 import Profile from "./components/profile";
+import ExperiencePage from "./pages/experience";
+import ProjectPage from "./pages/project";
 export const App = () => {
   const [showProfile, setShowProfile] = useState(false);
   return (
@@ -10,7 +12,9 @@ export const App = () => {
       {showProfile ? <Profile onClose={() => setShowProfile(false)} /> : <></>}
       <Navbar openProfile={() => setShowProfile(!showProfile)} />
       <LandingPage />
+      <AboutPage />
       <ExperiencePage />
+      <ProjectPage />
     </div>
   );
 };

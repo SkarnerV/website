@@ -1,5 +1,3 @@
-import React from "react";
-
 const Avatar = () => {
   return (
     <div className="relative inline-block">

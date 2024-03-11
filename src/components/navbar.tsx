@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Button from "./button";
 import Avatar from "./avatar";
 
@@ -36,7 +36,7 @@ const Navbar = (props: { openProfile: () => void }) => {
         <div className="hidden md:block">
           <Button text={"About"} />
           <Button text={"Experience"} />
-          <Button text={"Project"} />
+          <Button text={"Projects"} />
           <Button text={"Contact"} />
         </div>
         <button

@@ -60,7 +60,7 @@ const flData = [
 ];
 
 const ProgressBar = (props: { name: string; percentage: number }) => (
-  <div className="flex items-center justify-between w-full text-xl pt-4">
+  <div className="flex items-center justify-between w-full text-lg pt-4">
     {props.name}
     <div className="w-1/2 pr-8">
       <div className="w-full bg-gray-700 border-gray-400 border-2 group-hover:border-white h-4 ">
@@ -74,7 +74,7 @@ const ProgressBar = (props: { name: string; percentage: number }) => (
 );
 const AboutPage = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 ">
       <div className="flex flex-row w-full justify-center items-center">
         <div className="bg-cover bg-terminal w-10 h-10 mx-4"></div>
         <BlinkingCursor text="About me" />
@@ -109,22 +109,22 @@ const AboutPage = () => {
 
       <div className="group flex flex-col mt-8 text-3xl font-mono text-gray-400 border-gray-400 hover:text-white hover:border-white border-2 p-4">
         <b>Tech Stack</b>
-        <div className="flex md:flex-row flex-col">
-          <div className="w-full md:w-1/3 mx-2">
-            <p className="text-2xl flex-col pt-6">Programming Languages</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="w-full mx-2">
+            <p className="text-xl flex-col pt-6">Programming Languages</p>
             {plData.map((pl) => (
               <ProgressBar name={pl.name} percentage={pl.percentage} />
             ))}
           </div>
-          <div className="w-full md:w-1/3 mx-2">
-            <p className="text-2xl flex-col pt-6">Frameworks & Library</p>
+          <div className="w-full  mx-2">
+            <p className="text-xl flex-col pt-6">Frameworks & Library</p>
             {flData.map((fl) => (
               <ProgressBar name={fl.name} percentage={fl.percentage} />
             ))}
           </div>
-          <div className="w-full md:w-1/3 mx-2">
-            <p className="text-2xl flex-col pt-6 ">Others</p>
-            <div className="flex space-x-4 pt-4">
+          <div className="w-full mx-2">
+            <p className="text-xl flex-col pt-6 ">Others</p>
+            <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 pt-2">
               <GitIcon />
               <DockerIcon />
               <HTMLIcon />
@@ -132,9 +132,6 @@ const AboutPage = () => {
               <FigmaIcon />
               <UbuntuIcon />
               <MySQLIcon />
-            </div>
-
-            <div className="flex space-x-4  pt-2">
               <AWSIcon />
               <MongoDBIcon />
               <K8sIcon />
@@ -142,8 +139,6 @@ const AboutPage = () => {
               <KafkaIcon />
               <GCPIcon />
               <AzureIcon />
-            </div>
-            <div className="flex space-x-4  pt-2">
               <RedisIcon />
               <SocketIcon />
               <JestIcon />

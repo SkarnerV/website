@@ -16,3 +16,15 @@
     border-color: white;
   }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hover-white {
+    @apply text-gray-400 border-2 border-gray-400 hover:border-white hover:text-white;
+  }
+}

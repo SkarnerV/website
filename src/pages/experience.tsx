@@ -9,13 +9,13 @@ const Experience = (props: {
   return (
     <div
       key={props.icon}
-      className="flex items-center justify-between px-2 md:px-24 py-8 hover:border-white border-transparent border-2 font-mono text-gray-400 hover:text-white"
+      className="flex flex-col lg:flex-row items-center justify-between px-2 md:px-24 py-8 font-mono text-gray-400 hover-white"
     >
-      <div className={`bg-cover bg-${props.icon} w-20 h-20`}></div>
-      <div className="flex flex-col text-right">
-        <div className="text-3xl">{props.company}</div>
-        <div className="text-2xl">{props.title}</div>
-        <div className="text-xl">{props.time}</div>
+      <div className={`bg-cover ${props.icon} w-20 h-20`}></div>
+      <div className="flex flex-col flex-1 items-center lg:items-end">
+        <div className="text-lg sm:text-xl md:text-2xl">{props.company}</div>
+        <div className="text-md sm:text-lg md:text-xl ">{props.title}</div>
+        <div className="text-sm sm:text-md md:text-lg">{props.time}</div>
       </div>
     </div>
   );
@@ -29,46 +29,46 @@ const ExperiencePage = () => {
         <BlinkingCursor text="Experience" />
       </div>
 
-      <div className="w-full px-16 pt-16 space-y-8">
+      <div className="w-full pt-16 space-y-8">
         <Experience
           company={"Carnegie Mellon University"}
-          icon={"cmu"}
+          icon={"bg-cmu"}
           title={"MS Software Engieering"}
           time={"Aug 2023 - Dec 2024"}
         />
         <Experience
           company={"Carnegie Mellon University"}
-          icon={"cmu"}
+          icon={"bg-cmu"}
           title={"Research Assistant"}
           time={"Feb 2024 - Present"}
         />
         <Experience
           company={"Stealth Startup"}
-          icon={"stealth"}
+          icon={"bg-stealth"}
           title={"Software Engineer Intern"}
           time={"Oct 2023 - Feb 2024"}
         />
         <Experience
           company={"Siemens"}
-          icon={"siemens"}
+          icon={"bg-siemens"}
           title={"Software Engineer Intern"}
           time={"May 2022 - Jul 2023"}
         />
         <Experience
           company={"Northeastern University"}
-          icon={"neu"}
+          icon={"bg-neu"}
           title={"BS Computer Science"}
           time={"Sep 2019 - Apr 2023"}
         />
         <Experience
           company={"Scout"}
-          icon={"scout"}
+          icon={"bg-scout"}
           title={"Developer"}
           time={"Jan 2023 - Apr 2023"}
         />
         <Experience
           company={"Pfizer"}
-          icon={"pfizer"}
+          icon={"bg-pfizer"}
           title={"Engineer Coop"}
           time={"Feb 2022 - Jul 2022"}
         />

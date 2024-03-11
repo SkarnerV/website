@@ -12,8 +12,11 @@ export const App = () => {
       {showProfile ? <Profile onClose={() => setShowProfile(false)} /> : <></>}
       <Navbar openProfile={() => setShowProfile(!showProfile)} />
       <LandingPage />
+      <div id="About" className="mb-16"></div>
       <AboutPage />
+      <div id="Experience" className="mb-16"></div>
       <ExperiencePage />
+      <div id="Projects" className="mb-16"></div>
       <ProjectPage />
     </div>
   );

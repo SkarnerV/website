@@ -33,6 +33,7 @@ const Navbar = (props: { openProfile: () => void }) => {
         <div onClick={props.openProfile}>
           <Avatar />
         </div>
+        <div></div>
         <div className="hidden md:block">
           <Button text={"About"} />
           <Button text={"Experience"} />

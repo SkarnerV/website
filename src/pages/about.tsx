@@ -74,7 +74,7 @@ const ProgressBar = (props: { name: string; percentage: number }) => (
 );
 const AboutPage = () => {
   return (
-    <div className="p-8 ">
+    <div className="p-8 2xl:px-64">
       <div className="flex flex-row w-full justify-center items-center">
         <div className="bg-cover bg-terminal w-10 h-10 mx-4"></div>
         <BlinkingCursor text="About me" />
@@ -87,19 +87,19 @@ const AboutPage = () => {
         <div className="px-2">Han</div>
       </div>
       <div className="flex flex-col font-mono text-white text-2xl">
-        <div className="pt-6 flex flex-row items-center">
+        <div className="pt-6 flex flex-col md:flex-row items-center">
           <p>A Student at </p>
           <div className="ml-4 border-gray-400 hover:border-white border-2 p-2 text-gray-400 hover:text-white">
             Carnegie Mellon University
           </div>
         </div>
-        <div className="pt-6 flex flex-row items-center">
+        <div className="pt-6 flex flex-col md:flex-row items-center">
           <p>An addict of</p>
           <div className="ml-4 border-gray-400 hover:border-white border-2 p-2 text-gray-400 hover:text-white">
             HAYTEA
           </div>
         </div>
-        <div className="pt-6 flex flex-row items-center">
+        <div className="pt-6 flex flex-col md:flex-row items-center">
           <p>A fan of</p>
           <div className="ml-4 border-gray-400 hover:file:border-white border-2 p-2 text-gray-400 hover:text-white">
             One Piece

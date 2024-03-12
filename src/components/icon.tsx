@@ -7,7 +7,7 @@ const Icon = (props: { path?: string; iconName: string }) => {
             window.location.href = props.path;
           }
         }}
-        className={`bg-cover bg-${props.iconName} w-6 h-6`}
+        className={`bg-cover ${props.iconName} w-6 h-6`}
       ></div>
     </div>
   );

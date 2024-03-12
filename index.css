@@ -27,4 +27,8 @@
   .hover-white {
     @apply text-gray-400 border-2 border-gray-400 hover:border-white hover:text-white;
   }
+
+  .group-hover-white {
+    @apply text-gray-400 group-hover:text-white;
+  }
 }

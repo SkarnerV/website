@@ -5,10 +5,11 @@ import AboutPage from "./pages/about";
 import Profile from "./components/profile";
 import ExperiencePage from "./pages/experience";
 import ProjectPage from "./pages/project";
+import Footer from "./components/footer";
 export const App = () => {
   const [showProfile, setShowProfile] = useState(false);
   return (
-    <div className="w-full bg-gray-700">
+    <div className="w-full bg-gray-700 select-none">
       {showProfile ? <Profile onClose={() => setShowProfile(false)} /> : <></>}
       <Navbar openProfile={() => setShowProfile(!showProfile)} />
       <LandingPage />
@@ -18,6 +19,8 @@ export const App = () => {
       <ExperiencePage />
       <div id="Projects" className="mb-16"></div>
       <ProjectPage />
+      <div id="Contact" className="mb-16"></div>
+      <Footer />
     </div>
   );
 };

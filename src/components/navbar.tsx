@@ -52,7 +52,7 @@ const Navbar = (props: { openProfile: () => void }) => {
         <div className="md:hidden flex flex-col w-full items-end">
           <Button text={"About"} />
           <Button text={"Experience"} />
-          <Button text={"Project"} />
+          <Button text={"Projects"} />
           <Button text={"Contact"} />
         </div>
       )}

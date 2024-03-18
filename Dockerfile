@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pnpm
+RUN npm install -g pnpm
+
+RUN pnpm install
 
 RUN pnpm build
 

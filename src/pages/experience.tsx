@@ -49,6 +49,12 @@ const ExperiencePage = () => {
         <div className="group hover-white p-4">
           <b>Work Experience</b>
           <Experience
+            company={"Alibaba Group"}
+            icon={"bg-alibaba"}
+            title={"Software Engineer Intern"}
+            time={"May 2024 - Aug 2024"}
+          />
+          <Experience
             company={"Carnegie Mellon University"}
             icon={"bg-cmu"}
             title={"Research Assistant"}

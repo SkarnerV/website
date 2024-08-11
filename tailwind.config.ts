@@ -20,6 +20,7 @@ module.exports = {
         cmu: "url('/public/img/cmu.jpeg')",
         scout: "url('/public/img/scout.jpeg')",
         stealth: "url('/public/img/stealth.jpeg')",
+        alibaba: "url('/public/img/alibaba.png')",
       },
     },
   },

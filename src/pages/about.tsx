@@ -42,7 +42,7 @@ const plData = [
 
 const flData = [
   {
-    name: "React.js",
+    name: "React",
     percentage: 70,
   },
   {
